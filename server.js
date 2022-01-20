@@ -19,6 +19,7 @@ const corsOptionsDelegate = function (req, callback) {
     `http://localhost:3000`,
     "http://127.0.0.1:3000",
     "https://shopify-inventory-front.netlify.app/",
+    "http://shopify-inventory-front.netlify.app/",
   ];
   let corsOptions;
   if (allowlist.indexOf(req.header("Origin")) !== -1) {
